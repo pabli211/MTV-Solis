@@ -16,8 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from DB_familiares.views import mostrar_familiar
-
+from .views import probando_html
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('familiar/', mostrar_familiar),
-]
+    path('probando/', probando_html),
+    ]
